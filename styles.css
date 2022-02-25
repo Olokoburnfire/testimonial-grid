@@ -1,0 +1,284 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --Moderate-violet: hsl(263, 55%, 52%);
+            --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+            --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+            --White: hsl(0, 0%, 100%);
+            --Light-gray: hsl(0, 0%, 81%);
+            --Light-grayish-blue: hsl(210, 46%, 95%);
+        }
+        
+        img {
+            max-width: 50%;
+            height: auto;
+            transform: scale(0.6);
+        }
+        
+        body {
+            min-height: 100vh;
+            font-family: "Barlow Semi Condensed", sans-serif;
+            font-size: 13px;
+            background-color: var(--Light-grayish-blue);
+            /* background-image: url(./images/bg-pattern-quotation.svg); */
+            display: grid;
+        }
+        
+        .container {
+            display: grid;
+            max-width: 90%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            margin: 0 auto;
+        }
+        
+        .wrapper {
+            max-width: 100%;
+            display: grid;
+            grid-gap: 1.5rem;
+            padding: .5rem 1.25rem .5rem;
+        }
+        
+        .card {
+            max-width: 100%;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+        
+        .card .profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .card .profile img {
+            border-radius: 50%;
+            border-style: solid;
+            border-color: hsla(0, 0%, 100%, 50%);
+            align-self: start;
+        }
+        
+        .card-1 {
+            background-color: var(--Moderate-violet);
+            background-image: url(./images/bg-pattern-quotation.svg);
+            background-repeat: no-repeat;
+            background-position: right top;
+            border-radius: 0.5rem;
+        }
+        
+        .card-1 .profile aside {
+            padding-left: 1rem;
+        }
+        
+        .card-1 .profile aside .name {
+            color: hsl(0, 0%, 100%);
+            font-weight: 500;
+        }
+        
+        .card-1 .profile aside .title {
+            color: hsla(0, 0%, 100%, 50%)
+        }
+        
+        .card-1 .testimonial {
+            color: hsl(0, 0%, 100%);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 1rem;
+        }
+        
+        .card-1 .quote {
+            color: hsl(0, 0%, 100%);
+            opacity: 0.7;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-2 {
+            background-color: var(--Very-dark-grayish-blue);
+        }
+        
+        .card-2 .profile aside {
+            padding-left: 1rem;
+        }
+        
+        .card-2 .profile aside .name {
+            color: hsl(0, 0%, 100%);
+            font-size: inherit;
+            font-weight: 500;
+        }
+        
+        .card-2 .profile aside .title {
+            color: hsla(0, 0%, 100%, 50%)
+        }
+        
+        .card-2 .testimonial {
+            color: hsl(0, 0%, 100%);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 1rem;
+        }
+        
+        .card-2 .quote {
+            color: hsl(0, 0%, 100%);
+            opacity: 0.7;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-3 {
+            background-color: var(--White);
+        }
+        
+        .card-3 .profile aside {
+            padding-left: 1rem;
+        }
+        
+        .card-3 .profile aside .name {
+            color: hsl(0, 0%, 0%);
+            font-weight: 500;
+        }
+        
+        .card-3 .profile aside .title {
+            color: hsl(0, 0%, 0%);
+            opacity: 0.5;
+        }
+        
+        .card-3 .testimonial {
+            color: hsl(0, 0%, 0%);
+            ;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 1rem;
+        }
+        
+        .card-3 .quote {
+            color: hsl(0, 0%, 0%);
+            ;
+            opacity: 0.7;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-4 {
+            background-color: var(--Very-dark-blackish-blue);
+        }
+        
+        .card-4 .profile aside {
+            padding-left: 1rem;
+        }
+        
+        .card-4 .profile aside .name {
+            color: hsl(0, 0%, 100%);
+            font-weight: 500;
+        }
+        
+        .card-4 .profile aside .title {
+            color: hsl(0, 0%, 100%);
+            opacity: 0.5;
+        }
+        
+        .card-4 .testimonial {
+            color: hsl(0, 0%, 100%);
+            ;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 1rem;
+        }
+        
+        .card-4 .quote {
+            color: hsl(0, 0%, 100%);
+            opacity: 0.7;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-5 {
+            background-color: var(--White);
+        }
+        
+        .card-5 .profile aside {
+            padding-left: 1rem;
+        }
+        
+        .card-5 .profile aside .name {
+            color: hsl(0, 0%, 0%);
+            font-weight: 500;
+        }
+        
+        .card-5 .profile aside .title {
+            color: hsl(0, 0%, 0%);
+            opacity: 0.5;
+        }
+        
+        .card-5 .testimonial {
+            color: hsl(0, 0%, 0%);
+            ;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 1rem;
+        }
+        
+        .card-5 .quote {
+            color: hsl(0, 0%, 0%);
+            opacity: 0.7;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        @media only screen and (min-width:850px) {
+            .container {
+                display: grid;
+                max-width: 90%;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                margin: 0 auto;
+            }
+            .wrapper {
+                max-width: 100%;
+                display: grid;
+                grid-gap: 1.5rem;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas: "card-1 card-1 card-2 card-5" "card-3 card-4 card-4 card-5";
+                padding: .5rem 1.25rem .5rem;
+            }
+            .card-1 {
+                grid-area: card-1;
+            }
+            .card-2 {
+                grid-area: card-2;
+            }
+            S .card-3 {
+                grid-area: card-3;
+            }
+            .card-4 {
+                grid-area: card-4;
+            }
+            .card-5 {
+                grid-area: card-5;
+            }
+        }
